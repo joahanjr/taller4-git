@@ -8,6 +8,7 @@ html{
 }
 a{
     color: black;
+    text-decoration: none;
 }
 .header-pag{
     width: 100%;
@@ -44,6 +45,17 @@ a{
     list-style: none;
     justify-content: space-evenly;
 }
+.inicio__cuerpo{
+    width: 100%;
+    height: 85vh;
+    background-image: url("https://img.freepik.com/vector-gratis/concepto-farmacia-o-tienda-medica_74855-7815.jpg?w=740&t=st=1676069190~exp=1676069790~hmac=43646be597e5447aa02a80638d25d695d45254304be46b76471cff5ec25facd2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
 .cuerpo{
     width: 100%;
     height: 85vh;
@@ -54,9 +66,18 @@ a{
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(9, 1fr);
 }
-.cuerpo h1{
+.cuerpo .especialidades__tema-principal{
     grid-column-start: 3;
     grid-column-end: 8;
+}
+.inicio__tema-principal{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    font-size: 2.8rem;
+    padding-top: 55px;
+    text-transform: uppercase;
+
 }
 img{
     width: 45%;
@@ -65,7 +86,8 @@ img{
     opacity: 100%;
 }
 section div p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     margin-top: 20px;
