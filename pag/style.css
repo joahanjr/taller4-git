@@ -67,8 +67,11 @@ a{
     grid-template-rows: repeat(9, 1fr);
 }
 .cuerpo .especialidades__tema-principal{
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 8;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 .inicio__tema-principal{
     grid-column-start: 2;
