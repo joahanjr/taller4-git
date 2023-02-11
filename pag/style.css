@@ -39,6 +39,20 @@ a{
     display: flex;
     align-items: center;
 }
+.navegacion ul li{
+    display: flex;
+    align-items: center;
+}
+.navegacion button{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 140px;
+    height: 40px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
 .navegacion ul{
     width: 100%;
     display: flex;
@@ -73,6 +87,27 @@ a{
     display: flex;
     justify-content: center;
 }
+.somos__cuerpo{
+    width: 100%;
+    height: 85vh;
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-estampado-medico-limpio_53876-116871.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.contacto__cuerpo{
+    width: 100%;
+    height: 85vh;
+    background-image: url("http://www.farmasol.gob.ec/wp-content/uploads/2020/04/Farmacias.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
 .inicio__tema-principal{
     grid-column-start: 2;
     grid-column-end: 5;
@@ -81,6 +116,22 @@ a{
     padding-top: 55px;
     text-transform: uppercase;
 
+}
+.somos__section{
+    grid-column: 2/5;
+    grid-row: 2/5;
+}
+.somos__section--titulo{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+.somos__section--info{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
 }
 img{
     width: 45%;
@@ -110,4 +161,30 @@ section div p{
 .itemfour{
     grid-area: 6/6/9/8;
     /* background-color: aliceblue; */
+}
+.contacto{
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+}
+.contacto p{
+    margin-left: 50px;
+}
+.whatsapp, .facebook, .maps{
+    grid-column: 2/3;
+    margin-left: 50px;
+}
+.whatsapp{
+    grid-row: 2/3;
+}
+.facebook{
+    grid-row: 4/5;
+}
+.maps{
+    grid-row: 6/7;
+}
+.foto{
+    width: 100px;
 }
