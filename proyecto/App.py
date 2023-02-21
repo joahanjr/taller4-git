@@ -10,7 +10,7 @@ def index_():
 def index():
     return render_template('index.html')
 
-@app.route ('/servivios.html')
+@app.route ('/servicios.html')
 def servicios():
     return render_template('servicios.html')
 
@@ -27,4 +27,4 @@ def contacto():
     return render_template ('contacto.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=4000)
+    app.run(host='0.0.0.0', port=5000)
