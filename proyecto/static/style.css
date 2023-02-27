@@ -17,6 +17,7 @@ a{
     display: flex;
     font-size: 1.8rem;
     color: black;
+    border-bottom: 1px solid black;
 }
 .logo img{
     width: 50px;
@@ -43,21 +44,24 @@ a{
     display: flex;
     align-items: center;
 }
-.navegacion button{
+.navegacion ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.boton{
     background-color: black;
-    color: white;
-    border: none;
     width: 140px;
     height: 40px;
     font-size: 1.4rem;
     text-transform: uppercase;
     border-radius: 5px;
 }
-.navegacion ul{
-    width: 100%;
+.boton a{
+    color: white;
     display: flex;
-    list-style: none;
-    justify-content: space-evenly;
+    margin:  0 auto
 }
 .inicio__cuerpo{
     width: 100%;
@@ -136,7 +140,6 @@ a{
 img{
     width: 45%;
     display: flex;
-    margin: 0 auto;
     opacity: 100%;
 }
 section div p{
@@ -187,4 +190,72 @@ section div p{
 }
 .foto{
     width: 100px;
+}
+/* citas css */
+.container{
+    width:400px;
+    height: 65vh;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border: .5px solid black;
+    margin-top: 50px;
+}
+.container-login{
+    border-bottom: .5px solid black;
+}
+.correo, .contra, .annio{
+    display: flex;
+}
+h2{
+    font-size: 2.8rem;
+    color: black;
+}
+picture{
+    display: flex;
+    width: 100%;
+    border-bottom: .5px solid rgb(88, 88, 88);
+}
+.face{
+    margin-left: auto;
+}
+.call{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.face, .call{
+    width: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inputs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inputs input{
+    width: 100%;
+    height: 30px;
+    font-size: 1.6rem;
+}
+input{
+    margin-bottom: 25px;
+}
+.thebutton{
+    margin-left: calc(50% - 50px);
+}
+.thebutton button{
+    font-size: 1.2rem;
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #18386B;
+    border: none;
+    text-align: center;
+}
+.box{
+    width: 30px;
+    height: 30px;
+    background-color: #E9ECEF;
+    border-radius: 2px;
+    margin-right: 5px;
 }
