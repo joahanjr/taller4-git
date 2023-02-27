@@ -26,5 +26,9 @@ def quienesSomos():
 def contacto():
     return render_template ('contacto.html')
 
+@app.route ('/cita.html')
+def cita():
+    return render_template ('cita.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
